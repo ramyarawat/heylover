@@ -46,13 +46,13 @@ elif st.session_state.step == 3:
         st.session_state.step = 4
 
 elif st.session_state.step == 4:
-    ans4 = st.radio("4. Are you free on 28 June? 📅", ["Yes", "No"], index=None)
+    ans4 = st.radio("4. Are you free on 25 July? 📅", ["Yes", "No"], index=None)
     if st.button("Next 💌"):
         st.session_state.ans4 = ans4
         st.session_state.step = 5
 
 elif st.session_state.step == 5:
-    ans5 = st.radio("5. Where do you want to go? 📍", ["Majnu Ka Tilla", "Connaught Place", "Somewhere else"], index=None)
+    ans5 = st.radio("5. Where do you want to go? 📍", ["Satya Niketan","Connaught Place","Somewhere else"], index=None)
     custom_place = ""
     if ans5 == "Somewhere else":
         custom_place = st.text_input("Tell me where you'd like to go! ✨")
